@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Billing System</title>
+</head>
+<body>
+    <h1> Hotel Billing </h1>
+    <label for="foodItems"> Food Items</label> <select name="" id="foodItems">
+        <option value="none"></option>
+    </select>
+    <label for="quantity"><input type="number" id="quantity"></label>
+
+    <button id="button"> Generate Bill </button>
+    <div>
+        <h2> Your Bill </h2>
+        <p id="totalAmount"></p>
+        <p id="GST"></p>
+        <p id="totalAmountAfterGst"></p>
+    </div>
+
+
+    <script type="module" src="../../dist/GenerateBill.js"></script>
+</body>
+</html>
