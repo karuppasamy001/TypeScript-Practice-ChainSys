@@ -27,6 +27,10 @@ class Calculator implements Operations {
                 result = a * b;
                 break;
             case '/':
+                if(b == 0) {
+                    alert("Second Number Cannot be 0")
+                    return 0
+                }
                 result = a / b
                 break;
             case 'c':
